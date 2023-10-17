@@ -32,7 +32,6 @@ extension UIFont {
     }
 
 }
-#if !os(visionOS)
 extension UITraitCollection {
 
 #if !os(visionOS)
@@ -53,7 +52,6 @@ extension UITraitCollection {
 #endif
 
 }
-#endif
 
 
 extension UIFont {
