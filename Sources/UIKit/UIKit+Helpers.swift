@@ -32,7 +32,7 @@ extension UIFont {
     }
 
 }
-
+#if !os(visionOS)
 extension UITraitCollection {
 
     /// Obtain the `preferredContentSizeCategory` for the trait collection. This
@@ -47,6 +47,7 @@ extension UITraitCollection {
     }
 
 }
+#endif
 
 extension UIFont {
 
