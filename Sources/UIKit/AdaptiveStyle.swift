@@ -104,6 +104,7 @@ extension AdaptiveStyle: AdaptiveStyleTransformation {
         }
         let pointSize = font.pointSize
         let contentSizeCategory = traitCollection.bon_preferredContentSizeCategory
+
         var styleAttributes = theAttributes
         switch behavior {
         case .control:

@@ -35,6 +35,7 @@ extension UIFont {
 
 extension UITraitCollection {
 
+#if !os(visionOS)
     /// Obtain the `preferredContentSizeCategory` for the trait collection. This
     /// is compatible with iOS 9.x and will use the
     /// `UIApplication.shared.preferredContentSizeCategory` if the trait collection's
@@ -45,8 +46,14 @@ extension UITraitCollection {
         }
         return UIScreen.main.traitCollection.preferredContentSizeCategory
     }
+#else
+    public var bon_preferredContentSizeCategory: BonMotContentSizeCategory {
+        preferredContentSizeCategory
+    }
+#endif
 
 }
+
 
 extension UIFont {
 
